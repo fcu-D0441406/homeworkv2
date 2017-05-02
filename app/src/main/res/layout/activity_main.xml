@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/start_background"
+    tools:context="com.example.n.myapplication.MainActivity">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="76dp"
+        android:id="@+id/textView" />
+
+    <Button
+        android:text="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start"
+        android:background="@drawable/sliderb"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/fragment2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/choose_music"
+        android:background="@drawable/set_music"
+        android:text="music"
+        android:textStyle="bold"
+        android:layout_below="@+id/start"
+        android:layout_toLeftOf="@+id/start"
+        android:layout_toStartOf="@+id/start"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="36dp"
+        android:layout_height="100dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backpack"
+        android:background="@drawable/backpack"
+        android:layout_alignTop="@+id/choose_music"
+        android:layout_toRightOf="@+id/start"
+        android:layout_toEndOf="@+id/start" />
+
+    <fragment
+        android:name="com.example.n.myapplication.BlankFragment3"
+        tools:layout="@layout/fragment_blank_fragment3"
+        android:id="@+id/fragment2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="70dp"
+        android:layout_width="400dp"
+        android:layout_marginTop="0dp"/>
+
+</RelativeLayout>

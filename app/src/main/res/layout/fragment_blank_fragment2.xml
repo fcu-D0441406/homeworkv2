@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.n.myapplication.BlankFragment2"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/answer_a"
+        android:background="@drawable/button_image"/>
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/answer_b"
+        android:background="@drawable/button_image"/>
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/answer_c"
+        android:background="@drawable/button_image"/>
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/answer_d"
+        android:background="@drawable/button_image"/>
+</LinearLayout>

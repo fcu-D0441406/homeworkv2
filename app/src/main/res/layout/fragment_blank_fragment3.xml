@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.n.myapplication.BlankFragment3"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="73dp"
+        app:srcCompat="@drawable/double_times"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:id="@+id/double_count"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimaryDark" />
+    <Button
+        android:layout_width="42dp"
+        android:layout_height="37dp"
+        android:text="+"
+        android:layout_marginTop="10dp"
+        android:id="@+id/buy_doubletime"/>
+    <ImageView
+        android:layout_width="59dp"
+        android:layout_height="73dp"
+        app:srcCompat="@drawable/hidden"
+        android:id="@+id/imageView2"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:id="@+id/hidden_count"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:layout_width="42dp"
+        android:layout_height="37dp"
+        android:text="+"
+        android:layout_marginTop="10dp"
+        android:id="@+id/buy_halftime"/>
+
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="69dp"
+        app:srcCompat="@drawable/point"
+        android:id="@+id/imageView3" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/point_count"
+        android:layout_weight="0.07"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"/>/>
+</LinearLayout>
