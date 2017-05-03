@@ -35,6 +35,7 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         timer.schedule(timertask,0,1000);
+        get_id();
     }
 
     private void get_id(){
