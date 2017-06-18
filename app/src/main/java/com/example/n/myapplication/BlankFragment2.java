@@ -29,6 +29,7 @@ public class BlankFragment2 extends Fragment {
     private String [] answer_b = new String[50];
     private String [] answer_c = new String[50];
     private String [] answer_d = new String[50];
+    private String [][] all_answer = new String [50][4];
     public static Button answer_aa,answer_bb,answer_cc,answer_dd;
     public static Button [] answer = {answer_aa,answer_bb,answer_cc,answer_dd};
 
@@ -55,6 +56,7 @@ public class BlankFragment2 extends Fragment {
         answer_cc.setOnClickListener(listen);
         answer_dd.setOnClickListener(listen);
         show_topic(Main2Activity.number);
+        //rand_ans();
         timer.schedule(timertask,0,1000);
     }
     public void set_topic(){
@@ -62,10 +64,18 @@ public class BlankFragment2 extends Fragment {
         answer_b[0] = "霖";
         answer_c[0] = "林";
         answer_d[0] = "玲";
+        all_answer[0][0] = "臨";
+        all_answer[0][1] = "霖";
+        all_answer[0][2] = "林";
+        all_answer[0][3] = "玲";
         answer_a[1] = "虎";
         answer_b[1] = "唬";
         answer_c[1] = "汻";
         answer_d[1] = "萀";
+        all_answer[1][0] = "虎";
+        all_answer[1][1] = "唬";
+        all_answer[1][2] = "汻";
+        all_answer[1][3] = "萀";
     }
     public void show_topic(int number){
         //Toast.makeText(getActivity(),Integer.toString(Main2Activity.re_number),Toast.LENGTH_LONG).show();
@@ -150,5 +160,13 @@ public class BlankFragment2 extends Fragment {
     private void play_music(){
         mediaPlayer = MediaPlayer.create(getActivity(),MainActivity.music_id);
         mediaPlayer.start();
+    }
+    public void rand_ans(){
+        int rand1 = (int)(Math.random() * 4);
+        int temp = 0;
+        Toast.makeText(getActivity(),Integer.toString(rand1),Toast.LENGTH_LONG).show();
+        answer_aa.setText("a");
+        /*answer[rand1].setText(all_answer[Main2Activity.number][temp]);
+        answer[temp].setText(all_answer[Main2Activity.number][rand1]);*/
     }
 }
