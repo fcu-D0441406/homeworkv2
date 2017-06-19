@@ -1,9 +1,5 @@
 package com.example.n.myapplication;
 
-/**
- * Created by heichan on 19/6/2017.
- */
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Handler;
@@ -58,9 +54,9 @@ public class Main3Activity extends AppCompatActivity {
             startActivity(it);
         }
     };
-    /*public void onBackPressed() {
+    public void onBackPressed() {
 
-    }*/
+    }
     TimerTask timertask = new TimerTask() {
         @Override
         public void run() {

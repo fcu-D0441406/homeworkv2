@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">My Application</string>
     <string-array name="music_name">
-        <item>aaa</item>
-        <item>bbb</item>
-        <item>duduru</item>
+        <item>dudlru</item>
+        <item>music2</item>
+        <item>babu</item>
     </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->

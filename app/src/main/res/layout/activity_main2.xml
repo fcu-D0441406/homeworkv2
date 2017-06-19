@@ -15,11 +15,11 @@
         android:layout_height="wrap_content"
         android:name="com.example.n.myapplication.BlankFragment"
         tools:layout="@layout/fragment_blank"
-        android:layout_marginTop="99dp"
         android:id="@+id/frag"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/double_time"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
 
     <fragment
         android:layout_width="match_parent"
@@ -32,43 +32,49 @@
         android:layout_alignParentStart="true" />
 
     <Button
-        android:layout_alignParentTop="true"
+        android:id="@+id/double_time"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/double_time"
-        android:background="@drawable/double_times"
-        android:layout_width="80dp"
-        android:layout_height="80dp" />
+        android:layout_alignParentTop="true"
+        android:background="@drawable/double_times" />
 
     <Button
-        android:layout_alignBottom="@+id/double_time"
-        android:layout_toRightOf="@+id/double_time"
-        android:layout_toEndOf="@+id/double_time"
         android:id="@+id/hidden"
-        android:background="@drawable/hidden"
-        android:layout_width="80dp"
-        android:layout_height="80dp" />
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@+id/double_time"
+        android:layout_toEndOf="@+id/double_time"
+        android:layout_toRightOf="@+id/double_time"
+        android:background="@drawable/hidden" />
 
     <TextView
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="51dp"
-        android:layout_marginEnd="51dp"
         android:id="@+id/recip_text"
-        android:layout_alignBaseline="@+id/hidden"
-        android:layout_alignBottom="@+id/hidden"
+        android:background="@drawable/three"
+        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:background="@drawable/three"/>
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/hidden"
-        android:layout_alignLeft="@+id/recip_text"
-        android:layout_alignStart="@+id/recip_text"
-        android:id="@+id/point" />
+        android:id="@+id/point"
+        android:layout_alignBottom="@+id/hidden"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/bt_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="不想玩了"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

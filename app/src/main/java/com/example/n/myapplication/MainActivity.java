@@ -17,9 +17,9 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     private Button start_game,choose_music,backpack;
-    public static int  [] music_list_id = {R.raw.aaa,R.raw.abc,R.raw.dudulu,R.raw.music1};
-    public static String [] music_name = {"aaa","abc","duduru","music1"};
-    public static  int music_id = music_list_id[2];
+    public static int  [] music_list_id = {R.raw.dudulu,R.raw.babu,R.raw.music1,R.raw.music2};
+    public static String [] music_name = {"dudulu","babu","music1","music2"};
+    public static  int music_id = music_list_id[3];
     public static int longtime_buff=5,half_buff=5;
     public static int all_point = 0;
     private TextView textView;

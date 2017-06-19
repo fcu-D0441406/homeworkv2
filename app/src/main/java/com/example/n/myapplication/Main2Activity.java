@@ -1,5 +1,6 @@
 package com.example.n.myapplication;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
@@ -23,13 +24,13 @@ public class Main2Activity extends AppCompatActivity {
     BlankFragment2 b2 = new BlankFragment2();
     private int [] count_image = new int []{R.drawable.zero,R.drawable.one,R.drawable.two,R.drawable.three,R.drawable.four,R.drawable.five,R.drawable.six};
     public static int number = 0,re_number = 0;
-    public static int [] answer_number = {0,0};
+    public static int [] answer_number = {0,0,3,2};
     public static TextView recip_text;
     public static  int point = 0;
     public static int recip = 6;
     public static Timer timer = new Timer();
     public static TextView point_textview;
-    public static Button double_time,hidden;
+    public static Button double_time,hidden,exit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,8 +44,10 @@ public class Main2Activity extends AppCompatActivity {
         point_textview = (TextView)findViewById(R.id.point);
         double_time = (Button) findViewById(R.id.double_time);
         hidden = (Button) findViewById(R.id.hidden);
+        exit = (Button) findViewById(R.id.bt_exit);
         double_time.setOnClickListener(buff);
         hidden.setOnClickListener(buff);
+        exit.setOnClickListener(buff);
     }
 
     //返回鍵取消
@@ -89,6 +92,7 @@ public class Main2Activity extends AppCompatActivity {
         hidden.setEnabled(true);
         double_time.setBackgroundResource(R.drawable.double_times);
         hidden.setBackgroundResource(R.drawable.hidden);
+
     }
     private View.OnClickListener buff = new View.OnClickListener() {
         @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
@@ -112,6 +116,18 @@ public class Main2Activity extends AppCompatActivity {
                     hidden.setBackgroundResource(R.drawable.false1);
                     delete_answer();
                 }
+                else{
+                    Toast.makeText(Main2Activity.this,"你的道具不足",Toast.LENGTH_LONG).show();
+                }
+            }
+            if(v.getId()==R.id.exit){
+                /*Intent it = new Intent();
+                                 it.setClass(Main2Activity.this,Main3Activity.class);
+                                  it.putExtra("point",Main2Activity.point);
+                                     it.putExtra("l",MainActivity.longtime_buff);
+                                 it.putExtra("h",MainActivity.half_buff);
+                                startActivity(it);
+                                 System.exit(0);*/
             }
             //Toast.makeText(Main2Activity.this,Integer.toString(MainActivity.longtime_buff)+" "+Integer.toString(MainActivity.half_buff),Toast.LENGTH_LONG).show();
         }
