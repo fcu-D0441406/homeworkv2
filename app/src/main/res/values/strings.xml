@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">My Application</string>
     <string-array name="music_name">
-        <item>music2</item>
-        <item>music3</item>
         <item>duduru</item>
         <item>music1</item>
+        <item>music2</item>
+        <item>music3(Default)</item>
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

@@ -45,13 +45,13 @@
         android:layout_height="100dp" />
 
     <Button
+        android:id="@+id/backpack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/backpack"
-        android:background="@drawable/backpack"
-        android:layout_alignTop="@+id/choose_music"
+        android:layout_alignBottom="@+id/choose_music"
+        android:layout_toEndOf="@+id/start"
         android:layout_toRightOf="@+id/start"
-        android:layout_toEndOf="@+id/start" />
+        android:background="@drawable/backpack" />
 
     <fragment
         android:name="com.example.n.myapplication.BlankFragment3"
