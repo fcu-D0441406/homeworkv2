@@ -64,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
                 dialog_music = new Dialog(MainActivity.this);
                 dialog_music.setCancelable(true);
                 dialog_music.setContentView(R.layout.set_music);
+                exit_music = (Button) dialog_music.findViewById(R.id.exit);
+                exit_music.setOnClickListener(listen_exit);
                 dialog_music.show();
                 ListView listView = (ListView) dialog_music.findViewById(R.id.choose_music);
                 ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(MainActivity.this,R.array.music_name,android.R.layout.simple_list_item_1);
@@ -82,8 +84,6 @@ public class MainActivity extends AppCompatActivity {
         public void onItemClick(AdapterView<?> parent,View view,int position,long id){
             music_id = music_list_id[position];
             Toast.makeText(MainActivity.this,"音樂更換成功",Toast.LENGTH_LONG).show();
-            exit_music = (Button) dialog_music.findViewById(R.id.exit);
-            exit_music.setOnClickListener(listen_exit);
         }
     };
     private View.OnClickListener listen_exit = new View.OnClickListener(){

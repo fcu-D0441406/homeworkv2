@@ -120,14 +120,11 @@ public class Main2Activity extends AppCompatActivity {
                     Toast.makeText(Main2Activity.this,"你的道具不足",Toast.LENGTH_LONG).show();
                 }
             }
-            if(v.getId()==R.id.exit){
-                /*Intent it = new Intent();
-                                 it.setClass(Main2Activity.this,Main3Activity.class);
-                                  it.putExtra("point",Main2Activity.point);
-                                     it.putExtra("l",MainActivity.longtime_buff);
-                                 it.putExtra("h",MainActivity.half_buff);
-                                startActivity(it);
-                                 System.exit(0);*/
+            if(v.getId()==R.id.bt_exit){
+                Intent it = new Intent();
+                it.setClass(Main2Activity.this,MainActivity.class);
+                startActivity(it);
+                System.exit(0);
             }
             //Toast.makeText(Main2Activity.this,Integer.toString(MainActivity.longtime_buff)+" "+Integer.toString(MainActivity.half_buff),Toast.LENGTH_LONG).show();
         }
