@@ -1,0 +1,6 @@
+model_checkpoint_path: "MyModel-2000"
+all_model_checkpoint_paths: "MyModel-1960"
+all_model_checkpoint_paths: "MyModel-1970"
+all_model_checkpoint_paths: "MyModel-1980"
+all_model_checkpoint_paths: "MyModel-1990"
+all_model_checkpoint_paths: "MyModel-2000"
